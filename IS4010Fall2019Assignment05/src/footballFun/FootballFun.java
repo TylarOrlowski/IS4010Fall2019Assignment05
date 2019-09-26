@@ -1,8 +1,10 @@
 /*
- * IS4010 Fal 2019
+ * Tylar Orlowski
+ * orlowstt@mail.uc.edu
  * Assignment 05
- * Bill Nicholson
- * nicholdw@ucmail.uc.edu
+ * Due October 3rd
+ * Football Fun
+ * IS4010 Fal 2019
  */
 package footballFun;
 
@@ -26,6 +28,24 @@ public class FootballFun {
 		}
 	}
 	public static String translateScore (int score) {
-		return "";
+		if(score == 2) {
+			return "safety";
+		}else if(score == 3) {
+			return "field goal";
+		}else if(score == 6) {
+			return "touchdown";
+		}else if(score == 7) {
+			return "touchdown and extra point";
+		}else if(score == 8) {
+			return "touchdown and 2-point conversion";
+		}else if(score < 0) {
+			return "";
+		}else if(score == 1) {
+			return "invalid";
+		}else if(score == 10) {
+			return "you must be playing Quidditch ";
+		}else {
+			return "";
+		}
 	}
 }
